@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sankarshan's Business Analyst Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-gray-50 text-gray-800 p-4 sm:p-6 lg:p-8;
+        }
+        .main-container {
+            @apply bg-white rounded-3xl shadow-xl border border-gray-200;
+        }
+        .section-container {
+            @apply max-w-6xl mx-auto p-4 sm:p-6 lg:p-8;
+        }
+        .nav-link {
+            @apply text-lg font-medium text-gray-600 hover:text-gray-900 transition-colors duration-200;
+        }
+        .nav-link.active {
+            @apply text-gray-900 border-b-2 border-indigo-500;
+        }
+        .project-card, .document-card {
+            @apply bg-white rounded-xl shadow-lg p-6 mb-8 transform transition-transform duration-300 hover:scale-[1.02] border border-gray-200 cursor-pointer;
+        }
+        .project-card, .document-card {
+            @apply bg-white rounded-xl shadow-lg p-6 mb-8 transform transition-transform duration-300 hover:scale-[1.02] border border-gray-200 cursor-pointer;
+        }
+    </style>
+</head>
+<body class="scroll-smooth">
+
+    <!-- Main Content Wrapper with Border -->
+    <div class="main-container">
+
+        <!-- Header & Navigation -->
+        <header class="bg-white rounded-t-3xl shadow-sm sticky top-0 z-50">
+            <nav class="section-container flex flex-col md:flex-row justify-between items-center py-4">
+                <h1 class="text-2xl font-bold text-gray-900 mb-4 md:mb-0">Sankarshan's Portfolio</h1>
+                <div class="flex-wrap justify-center space-x-2 sm:space-x-4 md:space-x-8 flex">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#documents" class="nav-link">Documents</a>
+                    <a href="#resume" class="nav-link">Resume</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Home Section -->
+            <section id="home" class="section-container min-h-[80vh] flex items-center justify-center text-center">
+                <div>
+                    <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900">Sankarshan Bangaloree</h2>
+                    <p class="text-xl sm:text-2xl mt-4 text-gray-600 font-light">Business Analyst</p>
+                    <div class="mt-8 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#projects" class="bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-700 transition-colors duration-200">View Projects</a>
+                        <a href="#resume" class="bg-white text-indigo-600 font-semibold py-3 px-6 rounded-lg shadow-md border border-indigo-600 hover:bg-gray-100 transition-colors duration-200">View Resume</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="bg-gray-100 py-12 sm:py-20">
+                <div class="section-container">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">Project Timeline</h2>
+                    
+                    <!-- Project Timeline List with Images (Reversed Order) -->
+                    <div class="space-y-12">
+                        <!-- Project 10: Tiv Tiva Shruti Box -->
+                        <div class="project-card flex flex-col md:flex-row items-center md:items-start text-center md:text-left" onclick="showImageModal('https://placehold.co/800x600/F0F0F0/000000?text=Tiv+Tiva+Shruti+Box')">
+                            <div class="w-12 h-12 flex-shrink-0 bg-indigo-500 rounded-full flex items-center justify-center text-white text-sm font-bold mb-4 md:mb-0 md:mr-6">2025</div>
+                            <div class="flex-1 flex flex-col md:flex-row items-center md:items-start">
+                                <img src="https://placehold.co/400x250/F0F0F0/000000?text=Tiv+Tiva+Shruti+Box" alt="Tiv Tiva Shruti Box" class="rounded-lg shadow-md w-full md:w-1/2 lg:w-1/3 mb-4 md:mb-0 md:mr-6">
+                                <div class="flex-1">
+                                    <h3 class="text-xl font-bold text-gray-900">Tiv Tiva Shruti Box</h3>
+                                    <p class="text-gray-500 mt-1">Product, Website, Mobile App</p>
+                                    <p class="mt-4 text-gray-700">Conducted market research and feasibility studies for a new digital Shruti Box. Documented business processes and technical specifications for development.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project 9: RoBeeX Robot Kit -->
+                        <div class="project-card flex flex-col md:flex-row items-center md:items-start text-center md:text-left" onclick="showImageModal('https://placehold.co/800x600/FEF2F2/000000?text=RoBeeX+Robot+Kit')">
+                            <div class="w-12 h-12 flex-shrink-0 bg-indigo-500 rounded-full flex items-center justify-center text-white text-sm font-bold mb-4 md:mb-0 md:mr-6">2024</div>
+                            <div class="flex-1 flex flex-col md:flex-row items-center md:items-start">
+                                <img src="https://placehold.co/400x250/FEF2F2/000000?text=RoBeeX+Robot+Kit" alt="RoBeeX Robot Kit" class="rounded-lg shadow-md w-full md:w-1/2 lg:w-1/3 mb-4 md:mb-0 md:mr-6">
+                                <div class="flex-1">
+                                    <h3 class="text-xl font-bold text-gray-900">RoBeeX Robot Kit</h3>
+                                    <p class="text-gray-500 mt-1">Product, Website, Mobile App</p>
+                                    <p class="mt-4 text-gray-700">Managed requirements for a collaborative robot kit, focusing on user stories for assembly instructions and interactive learning features on the accompanying app and website.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project 8: DroBee Mini FPV Drone -->
+                        <div class="project-card flex flex-col md:flex-row items-center md:items-start text-center md:text-left" onclick="showImageModal('https://placehold.co/800x600/F9FAFB/000000?text=DroBee+Mini+FPV+Drone')">
+                            <div class="w-12 h-12 flex-shrink-0 bg-indigo-500 rounded-full flex items-center justify-center text-white text-sm font-bold mb-4 md:mb-0 md:mr-6">2023</div>
+                            <div class="flex-1 flex flex-col md:flex-row items-center md:items-start">
+                                <img src="https://placehold.co/400x250/F9FAFB/000000?text=DroBee+Mini+FPV+Drone" alt="DroBee Mini FPV Drone" class="rounded-lg shadow-md w-full md:w-1/2 lg:w-1/3 mb-4 md:mb-0 md:mr-6">
+                                <div class="flex-1">
+                                    <h3 class="text-xl font-bold text-gray-900">DroBee Mini FPV Drone</h3>
+                                    <p class="text-gray-500 mt-1">Product, Website, Mobile App</p>
+                                    <p class="mt-4 text-gray-700">Supported the development of a mini FPV drone by documenting functional and non-functional requirements. Ensured all features were clearly defined for the development team.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project 7: Joovv Light Therapy Panel -->
+                        <div class="project-card flex flex-col md:flex-row items-center md:items-start text-center md:text-left" onclick="showImageModal('https://placehold.co/800x600/F3F4F6/000000?text=Joovv+Light+Therapy+Panel')">
+                            <div class="w-12 h-12 flex-shrink-0 bg-indigo-500 rounded-full flex items-center justify-center text-white text-sm font-bold mb-4 md:mb-0 md:mr-6">2022</div>
+                            <div class="flex-1 flex flex-col md:flex-row items-center md:items-start">
+                                <img src="https://placehold.co/400x250/F3F4F6/000000?text=Joovv+Light+Therapy+Panel" alt="Joovv Light Therapy Panel" class="rounded-lg shadow-md w-full md:w-1/2 lg:w-1/3 mb-4 md:mb-0 md:mr-6">
+                                <div class="flex-1">
+                                    <h3 class="text-xl font-bold text-gray-900">Joovv Light Therapy Panel</h3>
+                                    <p class="text-gray-500 mt-1">Product, Website, Mobile App</p>
+                                    <p class="mt-4 text-gray-700">Analyzed existing light therapy product lines and proposed improvements for a new panel model, focusing on user experience and mobile app functionality.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project 6: EnergyLounger Light Therapy Bed -->
+                        <div class="project-card flex flex-col md:flex-row items-center md:items-start text-center md:text-left" onclick="showImageModal('https://placehold.co/800x600/E5E7EB/000000?text=EnergyLounger+Light+Therapy+Bed')">
+                            <div class="w-12 h-12 flex-shrink-0 bg-indigo-500 rounded-full flex items-center justify-center text-white text-sm font-bold mb-4 md:mb-0 md:mr-6">2022</div>
+                            <div class="flex-1 flex flex-col md:flex-row items-center md:items-start">
+                                <img src="https://placehold.co/400x250/E5E7EB/000000?text=EnergyLounger+Light+Therapy+Bed" alt="EnergyLounger Light Therapy Bed" class="rounded-lg shadow-md w-full md:w-1/2 lg:w-1/3 mb-4 md:mb-0 md:mr-6">
+                                <div class="flex-1">
+                                    <h3 class="text-xl font-bold text-gray-900">EnergyLounger Light Therapy Bed</h3>
+                                    <p class="text-gray-500 mt-1">Product, Website, Mobile App</p>
+                                    <p class="mt-4 text-gray-700">Created detailed documentation and wireframes for a new light therapy bed. Managed change requests and ensured alignment with business goals.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project 5: Aduro Light Therapy Face Mask -->
+                        <div class="project-card flex flex-col md:flex-row items-center md:items-start text-center md:text-left" onclick="showImageModal('https://placehold.co/800x600/D1D5DB/ffffff?text=Aduro+Light+Therapy+Face+Mask')">
+                            <div class="w-12 h-12 flex-shrink-0 bg-indigo-500 rounded-full flex items-center justify-center text-white text-sm font-bold mb-4 md:mb-0 md:mr-6">2021</div>
+                            <div class="flex-1 flex flex-col md:flex-row items-center md:items-start">
+                                <img src="https://placehold.co/400x250/D1D5DB/ffffff?text=Aduro+Light+Therapy+Face+Mask" alt="Aduro Light Therapy Face Mask" class="rounded-lg shadow-md w-full md:w-1/2 lg:w-1/3 mb-4 md:mb-0 md:mr-6">
+                                <div class="flex-1">
+                                    <h3 class="text-xl font-bold text-gray-900">Aduro Light Therapy Face Mask</h3>
+                                    <p class="text-gray-500 mt-1">Product, Website, Mobile App</p>
+                                    <p class="mt-4 text-gray-700">Contributed to the development life cycle for a light therapy face mask, focusing on user stories related to customizable light settings and mobile app integration.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project 4: Assembly Line Packaging -->
+                        <div class="project-card flex flex-col md:flex-row items-center md:items-start text-center md:text-left" onclick="showImageModal('https://placehold.co/800x600/9CA3AF/ffffff?text=Assembly+Line+Packaging')">
+                            <div class="w-12 h-12 flex-shrink-0 bg-indigo-500 rounded-full flex items-center justify-center text-white text-sm font-bold mb-4 md:mb-0 md:mr-6">2020</div>
+                            <div class="flex-1 flex flex-col md:flex-row items-center md:items-start">
+                                <img src="https://placehold.co/400x250/9CA3AF/ffffff?text=Assembly+Line+Packaging" alt="Assembly Line Packaging" class="rounded-lg shadow-md w-full md:w-1/2 lg:w-1/3 mb-4 md:mb-0 md:mr-6">
+                                <div class="flex-1">
+                                    <h3 class="text-xl font-bold text-gray-900">Assembly Line Packaging</h3>
+                                    <p class="text-gray-500 mt-1">Product, Website, Mobile App</p>
+                                    <p class="mt-4 text-gray-700">Optimized business processes for an automated packaging line, documenting system workflows and collaborating with stakeholders to improve efficiency.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project 3: Assembly Line Inspection -->
+                        <div class="project-card flex flex-col md:flex-row items-center md:items-start text-center md:text-left" onclick="showImageModal('https://placehold.co/800x600/6B7280/ffffff?text=Assembly+Line+Inspection')">
+                            <div class="w-12 h-12 flex-shrink-0 bg-indigo-500 rounded-full flex items-center justify-center text-white text-sm font-bold mb-4 md:mb-0 md:mr-6">2020</div>
+                            <div class="flex-1 flex flex-col md:flex-row items-center md:items-start">
+                                <img src="https://placehold.co/400x250/6B7280/ffffff?text=Assembly+Line+Inspection" alt="Assembly Line Inspection" class="rounded-lg shadow-md w-full md:w-1/2 lg:w-1/3 mb-4 md:mb-0 md:mr-6">
+                                <div class="flex-1">
+                                    <h3 class="text-xl font-bold text-gray-900">Assembly Line Inspection</h3>
+                                    <p class="text-gray-500 mt-1">Product, Website, Mobile App</p>
+                                    <p class="mt-4 text-gray-700">Led the requirements gathering and gap analysis for an automated inspection system on an assembly line, ensuring high quality control and defect detection.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project 2: AGV spray painter -->
+                        <div class="project-card flex flex-col md:flex-row items-center md:items-start text-center md:text-left" onclick="showImageModal('https://placehold.co/800x600/374151/ffffff?text=AGV+Spray+Painter')">
+                            <div class="w-12 h-12 flex-shrink-0 bg-indigo-500 rounded-full flex items-center justify-center text-white text-sm font-bold mb-4 md:mb-0 md:mr-6">2019</div>
+                            <div class="flex-1 flex flex-col md:flex-row items-center md:items-start">
+                                <img src="https://placehold.co/400x250/374151/ffffff?text=AGV+Spray+Painter" alt="AGV Spray Painter" class="rounded-lg shadow-md w-full md:w-1/2 lg:w-1/3 mb-4 md:mb-0 md:mr-6">
+                                <div class="flex-1">
+                                    <h3 class="text-xl font-bold text-gray-900">AGV spray painter</h3>
+                                    <p class="text-gray-500 mt-1">Product, Website, Mobile App</p>
+                                    <p class="mt-4 text-gray-700">Developed a business requirements document for an Automated Guided Vehicle (AGV) spray painter. Collaborated with engineering teams to define system specifications and user acceptance criteria.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project 1: Sygnal Smart Clothing -->
+                        <div class="project-card flex flex-col md:flex-row items-center md:items-start text-center md:text-left" onclick="showImageModal('https://placehold.co/800x600/2563EB/ffffff?text=Sygnal+Smart+Clothing')">
+                            <div class="w-12 h-12 flex-shrink-0 bg-indigo-500 rounded-full flex items-center justify-center text-white text-sm font-bold mb-4 md:mb-0 md:mr-6">2019</div>
+                            <div class="flex-1 flex flex-col md:flex-row items-center md:items-start">
+                                <img src="https://placehold.co/400x250/2563EB/ffffff?text=Sygnal+Smart+Clothing" alt="Sygnal Smart Clothing" class="rounded-lg shadow-md w-full md:w-1/2 lg:w-1/3 mb-4 md:mb-0 md:mr-6">
+                                <div class="flex-1">
+                                    <h3 class="text-xl font-bold text-gray-900">Sygnal Smart Clothing</h3>
+                                    <p class="text-gray-500 mt-1">Product, Website, Mobile App</p>
+                                    <p class="mt-4 text-gray-700">Analyzed requirements and facilitated development for a new line of smart clothing. Focused on user stories for biometric data tracking and a seamless app experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Project Documents Section -->
+            <section id="documents" class="bg-white py-12 sm:py-20">
+                <div class="section-container">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">Project Documents</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- BRD Sample 1 -->
+                        <div class="document-card bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center cursor-pointer" onclick="showImageModal('https://placehold.co/400x300/FEE2E2/000000?text=BRD+Sample+1')">
+                            <img src="https://placehold.co/400x300/FEE2E2/000000?text=BRD+Sample+1" alt="Business Requirements Document Sample 1" class="rounded-lg shadow-md w-full h-auto mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">BRD Sample 1</h3>
+                            <p class="mt-2 text-gray-600">A detailed example of a Business Requirements Document covering project goals, scope, and stakeholder needs.</p>
+                        </div>
+                        <!-- BRD Sample 2 -->
+                        <div class="document-card bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center cursor-pointer" onclick="showImageModal('https://placehold.co/400x300/FFE4E6/000000?text=BRD+Sample+2')">
+                            <img src="https://placehold.co/400x300/FFE4E6/000000?text=BRD+Sample+2" alt="Business Requirements Document Sample 2" class="rounded-lg shadow-md w-full h-auto mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">BRD Sample 2</h3>
+                            <p class="mt-2 text-gray-600">Another comprehensive BRD sample, showcasing a different project's requirements and business processes.</p>
+                        </div>
+                        <!-- FRD Sample 1 -->
+                        <div class="document-card bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center cursor-pointer" onclick="showImageModal('https://placehold.co/400x300/DBEAFE/000000?text=FRD+Sample+1')">
+                            <img src="https://placehold.co/400x300/DBEAFE/000000?text=FRD+Sample+1" alt="Functional Requirements Document Sample 1" class="rounded-lg shadow-md w-full h-auto mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">FRD Sample 1</h3>
+                            <p class="mt-2 text-gray-600">An example of a Functional Requirements Document detailing system behavior and user interactions.</p>
+                        </div>
+                        <!-- FRD Sample 2 -->
+                        <div class="document-card bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center cursor-pointer" onclick="showImageModal('https://placehold.co/400x300/BFDBFE/000000?text=FRD+Sample+2')">
+                            <img src="https://placehold.co/400x300/BFDBFE/000000?text=FRD+Sample+2" alt="Functional Requirements Document Sample 2" class="rounded-lg shadow-md w-full h-auto mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">FRD Sample 2</h3>
+                            <p class="mt-2 text-gray-600">A second sample of an FRD, showcasing specific functional requirements for a software application.</p>
+                        </div>
+                        <!-- SRS Sample 1 -->
+                        <div class="document-card bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center cursor-pointer" onclick="showImageModal('https://placehold.co/400x300/D1FAE5/000000?text=SRS+Sample+1')">
+                            <img src="https://placehold.co/400x300/D1FAE5/000000?text=SRS+Sample+1" alt="Software Requirements Specification Sample 1" class="rounded-lg shadow-md w-full h-auto mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">SRS Sample 1</h3>
+                            <p class="mt-2 text-gray-600">A detailed Software Requirements Specification document, outlining system functions and constraints.</p>
+                        </div>
+                        <!-- SRS Sample 2 -->
+                        <div class="document-card bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center cursor-pointer" onclick="showImageModal('https://placehold.co/400x300/B2F5E2/000000?text=SRS+Sample+2')">
+                            <img src="https://placehold.co/400x300/B2F5E2/000000?text=SRS+Sample+2" alt="Software Requirements Specification Sample 2" class="rounded-lg shadow-md w-full h-auto mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">SRS Sample 2</h3>
+                            <p class="mt-2 text-gray-600">Another sample of an SRS document, demonstrating different approaches to defining software requirements.</p>
+                        </div>
+                        <!-- PRD Sample 1 -->
+                        <div class="document-card bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center cursor-pointer" onclick="showImageModal('https://placehold.co/400x300/FDF6B7/000000?text=PRD+Sample+1')">
+                            <img src="https://placehold.co/400x300/FDF6B7/000000?text=PRD+Sample+1" alt="Product Requirements Document Sample 1" class="rounded-lg shadow-md w-full h-auto mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">PRD Sample 1</h3>
+                            <p class="mt-2 text-gray-600">An example of a Product Requirements Document, focusing on product features and market justification.</p>
+                        </div>
+                        <!-- PRD Sample 2 -->
+                        <div class="document-card bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center cursor-pointer" onclick="showImageModal('https://placehold.co/400x300/FCE8A6/000000?text=PRD+Sample+2')">
+                            <img src="https://placehold.co/400x300/FCE8A6/000000?text=PRD+Sample+2" alt="Product Requirements Document Sample 2" class="rounded-lg shadow-md w-full h-auto mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">PRD Sample 2</h3>
+                            <p class="mt-2 text-gray-600">A second sample of a PRD, highlighting the product's vision and business objectives.</p>
+                        </div>
+                        <!-- Use Case -->
+                        <div class="document-card bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center cursor-pointer" onclick="showImageModal('https://placehold.co/400x300/E3C5EA/000000?text=Use+Case')">
+                            <img src="https://placehold.co/400x300/E3C5EA/000000?text=Use+Case" alt="Use Case Diagram" class="rounded-lg shadow-md w-full h-auto mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">Use Case</h3>
+                            <p class="mt-2 text-gray-600">A diagram illustrating the system's interactions with its users and external systems.</p>
+                        </div>
+                        <!-- User Acceptance Testing (UAT) -->
+                        <div class="document-card bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center cursor-pointer" onclick="showImageModal('https://placehold.co/400x300/FBE1DB/000000?text=User+Acceptance+Testing')">
+                            <img src="https://placehold.co/400x300/FBE1DB/000000?text=User+Acceptance+Testing" alt="User Acceptance Testing" class="rounded-lg shadow-md w-full h-auto mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">User Acceptance Testing (UAT)</h3>
+                            <p class="mt-2 text-gray-600">A UAT test plan and results, showing the validation of project requirements against business needs.</p>
+                        </div>
+                        <!-- UML Diagram 1 -->
+                        <div class="document-card bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center cursor-pointer" onclick="showImageModal('https://placehold.co/400x300/DBEAFE/000000?text=UML+Diagram+1')">
+                            <img src="https://placehold.co/400x300/DBEAFE/000000?text=UML+Diagram+1" alt="UML Diagram 1" class="rounded-lg shadow-md w-full h-auto mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">UML Diagram 1</h3>
+                            <p class="mt-2 text-gray-600">A UML diagram illustrating the system's class and relationships for a specific project.</p>
+                        </div>
+                        <!-- UML Diagram 2 -->
+                        <div class="document-card bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center cursor-pointer" onclick="showImageModal('https://placehold.co/400x300/BFDBFE/000000?text=UML+Diagram+2')">
+                            <img src="https://placehold.co/400x300/BFDBFE/000000?text=UML+Diagram+2" alt="UML Diagram 2" class="rounded-lg shadow-md w-full h-auto mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">UML Diagram 2</h3>
+                            <p class="mt-2 text-gray-600">Another UML diagram, demonstrating a different system architecture or process flow.</p>
+                        </div>
+                        <!-- Requirement Traceability Matrix (RTM) -->
+                        <div class="document-card bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center cursor-pointer" onclick="showImageModal('https://placehold.co/400x300/F3E8FF/000000?text=RTM')">
+                            <img src="https://placehold.co/400x300/F3E8FF/000000?text=RTM" alt="Requirement Traceability Matrix" class="rounded-lg shadow-md w-full h-auto mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">Requirement Traceability Matrix (RTM)</h3>
+                            <p class="mt-2 text-gray-600">A matrix used to link business requirements to test cases, ensuring all features are tested.</p>
+                        </div>
+                        <!-- Wireframe 1 -->
+                        <div class="document-card bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center cursor-pointer" onclick="showImageModal('https://placehold.co/400x300/F8D1E6/000000?text=Wireframe+1')">
+                            <img src="https://placehold.co/400x300/F8D1E6/000000?text=Wireframe+1" alt="Wireframe 1" class="rounded-lg shadow-md w-full h-auto mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">Wireframe 1</h3>
+                            <p class="mt-2 text-gray-600">A wireframe showing the complete user journey and flow for a mobile application feature.</p>
+                        </div>
+                        <!-- Wireframe 2 -->
+                        <div class="document-card bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center cursor-pointer" onclick="showImageModal('https://placehold.co/400x300/F9B6CE/000000?text=Wireframe+2')">
+                            <img src="https://placehold.co/400x300/F9B6CE/000000?text=Wireframe+2" alt="Wireframe 2" class="rounded-lg shadow-md w-full h-auto mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">Wireframe 2</h3>
+                            <p class="mt-2 text-gray-600">A second wireframe sample, demonstrating the layout and user interface of a web application.</p>
+                        </div>
+                        <!-- Tableau -->
+                        <div class="document-card bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center cursor-pointer" onclick="showImageModal('https://placehold.co/400x300/C1DAF9/000000?text=Tableau+Dashboard')">
+                            <img src="https://placehold.co/400x300/C1DAF9/000000?text=Tableau+Dashboard" alt="Tableau Dashboard" class="rounded-lg shadow-md w-full h-auto mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">Tableau</h3>
+                            <p class="mt-2 text-gray-600">A dynamic data visualization dashboard created using Tableau to analyze key business metrics.</p>
+                        </div>
+                        <!-- Power BI -->
+                        <div class="document-card bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center cursor-pointer" onclick="showImageModal('https://placehold.co/400x300/98C1EA/000000?text=Power+BI+Report')">
+                            <img src="https://placehold.co/400x300/98C1EA/000000?text=Power+BI+Report" alt="Power BI Report" class="rounded-lg shadow-md w-full h-auto mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">Power BI</h3>
+                            <p class="mt-2 text-gray-600">An interactive business intelligence report developed with Power BI to provide actionable insights.</p>
+                        </div>
+                        <!-- Jira -->
+                        <div class="document-card bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center cursor-pointer" onclick="showImageModal('https://placehold.co/400x300/F7B2B2/000000?text=Jira+Dashboard')">
+                            <img src="https://placehold.co/400x300/F7B2B2/000000?text=Jira+Dashboard" alt="Jira Dashboard" class="rounded-lg shadow-md w-full h-auto mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">Jira</h3>
+                            <p class="mt-2 text-gray-600">A screenshot of a Jira dashboard, demonstrating project tracking and agile workflow management.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resume Section -->
+            <section id="resume" class="py-12 sm:py-20">
+                <div class="section-container">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">Resume</h2>
+                    <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-bold text-gray-900">Sankarshan Bangaloree</h3>
+                            <p class="text-lg text-gray-600">Business Analyst</p>
+                            <p class="mt-2 text-gray-500">sankarshansb@gmail.com | Bengaluru, India</p>
+                        </div>
+
+                        <div class="mb-8">
+                            <h4 class="text-xl font-semibold border-b-2 border-gray-200 pb-2 mb-4">Summary</h4>
+                            <p class="text-gray-700">Dynamic and versatile Business Analyst with 6.5+ yrs of experience in Manufacturing and IT industry domains. I bridge the gap between business and technology by expertly eliciting and documenting requirements and change management, and ensuring quality assurance throughout the SDLC. Skilled in Agile and Waterfall methodologies and proficient in documenting and visualizing complex systems using BRDs, FRDs, UML, and wireframes. Adept at facilitating Agile ceremonies, prioritizing backlogs, and leading cross-functional collaboration to drive efficient software development and system design. I have a proven ability to lead projects, manage stakeholders, and implement solutions that enhance operational efficiency.</p>
+                        </div>
+
+                        <div class="mb-8">
+                            <h4 class="text-xl font-semibold border-b-2 border-gray-200 pb-2 mb-4">Skills</h4>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>Elicitation Techniques:</strong> Skilled in conducting interviews, facilitating requirement workshops, Surveys</li>
+                                <li><strong>Documentation:</strong> BRD, FRD, SRS, PRD, User stories, Use cases, User Acceptance Criteria (UAT), RTM, RFQ, RFC, RACI</li>
+                                <li><strong>Process Visualization:</strong> UML, Flowchart, Canva, Draw.io, Figma, Axure RP, Balsami, EdrawMax, Bizagi Modeler, MS Visio, Wireframes, Mockups and Prototyping</li>
+                                <li><strong>Stakeholder Management:</strong> Cross-functional Collaboration, Conflict Resolution</li>
+                                <li><strong>Agile & SDLC Methodologies:</strong> Agile (Scrum), Kanban, Change Management, Waterfall, Hybrid Agile</li>
+                                <li><strong>BA Tools:</strong> Jira, Confluence, Trello, Monday, Slack, Notion, Microsoft office, Google Workspace, SharePoint, MS Teams</li>
+                                <li><strong>Data Visualization Tools:</strong> SQL, Advanced Excel, Power BI, Tableau</li>
+                                <li><strong>Tools:</strong> Python, Git, MySQL, AI & GenAl tools</li>
+                                <li><strong>Soft Skills:</strong> Strong Problem-Solving & Critical Thinking, Leadership & Organizational Abilities, Communication Skills, Proactiveness</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-8">
+                            <h4 class="text-xl font-semibold border-b-2 border-gray-200 pb-2 mb-4">Work Experience</h4>
+                            <div class="space-y-4">
+                                <div>
+                                    <h5 class="font-bold text-gray-900">Business Analyst | B Robotize, Bengaluru (Jan 2023 - Present)</h5>
+                                    <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                                        <li>Led requirement elicitation sessions using Interviews, Document Analysis, and Brainstorming, JAD sessions, ensuring 100% stakeholder alignment and reducing scope creep by 15%.</li>
+                                        <li>Conducted Gap (AS-IS and TO-BE), Scope, and Impact Analysis using UML, BPMN, and Flowcharts in Visio and Lucidchart, identifying 20% efficiency improvements in business processes.</li>
+                                        <li>Executed User Acceptance Testing (UAT), achieving a 90% success rate and recorded relevant risks, issues, assumptions, and dependencies on the RAID log for strategic reporting.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-gray-900">Business Analyst | Orangewood Labs, Noida (Feb 2022 - Nov 2022)</h5>
+                                    <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                                        <li>Performed in-depth requirements analysis for collaborative robot systems, which led to a 12% improvement in performance and efficiency and created detailed user stories with acceptance criteria, prototypes, business value, and preconditions, improving requirement clarity by 30% and reducing miscommunication.</li>
+                                        <li>Led efforts to showcase robotic technologies at six industry conferences; metrics collected indicated a 40% increase in stakeholder interest, directly informing strategic product development decisions for the upcoming fiscal year.</li>
+                                        <li>Collaborated with developers and QA teams to resolve 50+ requirement-related queries per project, actively supporting all phases of the SDLC.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-gray-900">Jr. Business Analyst | Light Tree Ventures Group, Delhi (Feb 2019 - Sep 2021)</h5>
+                                    <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                                        <li>Conducted process mapping and gap analysis to optimize production lines for 10+ light therapy products, driving efficiency and quality improvements, leading to 40% efficiency gains and 25% reduction in quality defects.</li>
+                                        <li>Collaborated with cross-functional teams during Development, Integration Testing, and UAT, ensuring 98% defect-free deployment and seamless end-to-end project execution.</li>
+                                        <li>Developed and documented business process models for the QMS, boosting compliance rates by 25% with ISO 13485:2016, CDSCO, FDA, and MDSAP certifications.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-8">
+                            <h4 class="text-xl font-semibold border-b-2 border-gray-200 pb-2 mb-4">Internships</h4>
+                            <div class="space-y-4">
+                                <p class="text-gray-700"><strong>Control Engineering Intern</strong> | Cummins India Limited, Pune (Jun 2017 - Mar 2018)</p>
+                                <p class="text-gray-700"><strong>R&D Intern</strong> | Fracktal Works, Manipal (Mar 2014 - Aug 2015)</p>
+                            </div>
+                        </div>
+
+                        <div class="mb-8">
+                            <h4 class="text-xl font-semibold border-b-2 border-gray-200 pb-2 mb-4">Education</h4>
+                            <div class="space-y-4">
+                                <p class="text-gray-700"><strong>Master of Technology, Industrial Automation & Robotics</strong> | Manipal Institute of Technology, Manipal (Jun 2016 - Aug 2018)</p>
+                                <p class="text-gray-700"><strong>Bachelor of Techology, Mechatronics Engineering</strong> | Manipal Institute of Technology, Manipal, India (Jul 2013 - May 2016)</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="py-12 sm:py-20 bg-gray-100">
+                <div class="section-container text-center">
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-8 text-gray-900">Get in Touch</h2>
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 max-w-lg mx-auto">
+                        <p class="text-lg text-gray-700 mb-6">I am currently available for new opportunities. Feel free to reach out to me via email or LinkedIn.</p>
+                        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                            <a href="mailto:sankarshansb@gmail.com" class="bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-700 transition-colors duration-200 block sm:flex-1">Email: sankarshansb@gmail.com</a>
+                            <a href="https://www.linkedin.com/in/sankarshan-bangaloree-7332b337b/" target="_blank" class="bg-white text-indigo-600 font-semibold py-3 px-6 rounded-lg shadow-md border border-indigo-600 hover:bg-gray-100 transition-colors duration-200 block sm:flex-1">LinkedIn Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Full-screen Image Modal -->
+        <div id="image-modal" class="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4 hidden" onclick="hideImageModal()">
+            <div class="relative max-w-5xl max-h-full">
+                <button class="absolute top-4 right-4 text-white text-4xl font-light leading-none z-10 hover:text-gray-300 transition-colors duration-200" onclick="hideImageModal()">
+                    &times;
+                </button>
+                <img id="modal-image" src="" alt="Full screen project document" class="max-w-full max-h-[80vh] rounded-lg shadow-xl" onclick="event.stopPropagation()">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 text-center rounded-b-3xl mt-4 sm:mt-6 lg:mt-8">
+        <p>&copy; 2025 Sankarshan Bangaloree. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('nav a');
+            const sections = document.querySelectorAll('section');
+
+            // Scroll to section and update active link
+            navLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    const targetId = event.currentTarget.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Intersection Observer to update active nav link on scroll
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const activeId = entry.target.id;
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === `#${activeId}`) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+
+        // Image Modal Functionality
+        const modal = document.getElementById('image-modal');
+        const modalImage = document.getElementById('modal-image');
+
+        function showImageModal(imageSrc) {
+            modalImage.src = imageSrc;
+            modal.classList.remove('hidden');
+        }
+
+        function hideImageModal() {
+            modal.classList.add('hidden');
+        }
+    </script>
+
+</body>
+</html>
